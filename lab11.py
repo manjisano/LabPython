@@ -13,9 +13,12 @@
 n = int(input())
 k = tuple(float(input()) for i in range(n))
 m = float(input())
-
+f = True
 for i in range(n-1):
     for j in range(1, n):
         if k[i]*k[j] == m:
             print('ДА')
+            f = False
             break
+if f:
+    print('НЕТ')
