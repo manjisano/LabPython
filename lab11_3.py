@@ -12,7 +12,7 @@
 
 k = tuple(map(float, input('Кортеж ').split(', ')))
 a = int(input('Элемент '))
-indexa = -1
+indexa = len(k)
 
 for i in range(len(k)):
     if k[i] == a:
